@@ -1,4 +1,4 @@
-import com.yolyn.springcloud.PaymentMainBoot;
+import com.yolyn.springcloud.PaymentMainBoot8001;
 import com.yolyn.springcloud.service.IPaymentService;
 import com.yolyn.springcloud.entities.Payment;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //测试开始时自动创建spring上下文
 @RunWith(SpringJUnit4ClassRunner.class)
 //加载配置
-@ContextConfiguration(classes = PaymentMainBoot.class)
+@ContextConfiguration(classes = PaymentMainBoot8001.class)
 public class SpringbootTest {
     @Autowired
     private IPaymentService paymentService;

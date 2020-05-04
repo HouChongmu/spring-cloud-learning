@@ -1,10 +1,12 @@
 package com.yolyn.springcloud;
 
+import com.yolyn.ribbonrule.MyRibbonRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @author Yolyn
@@ -14,6 +16,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class })
 @EnableEurekaClient
+@RibbonClient(configuration = MyRibbonRule.class,name = "springcloud-payment-service")
 public class OrderMain {
     public static void main(String[] args) {
         SpringApplication.run(OrderMain.class,args);
