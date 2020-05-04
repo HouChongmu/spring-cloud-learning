@@ -1,5 +1,4 @@
 package com.yolyn.springcloud.entities;
-
 import com.yolyn.springcloud.enums.CommonRespEnum;
 import lombok.Getter;
 import lombok.ToString;
