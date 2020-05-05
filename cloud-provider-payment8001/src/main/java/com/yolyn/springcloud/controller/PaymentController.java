@@ -65,4 +65,11 @@ public class PaymentController {
        }
        return new ResultModel(CommonRespEnum.COMMON_SUCCESS,sb);
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
+
+
 }

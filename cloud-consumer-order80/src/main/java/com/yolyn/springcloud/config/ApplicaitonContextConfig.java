@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan(basePackageClasses = {OrderMain.class})
 public class ApplicaitonContextConfig {
     @Bean
-    @LoadBalanced
+//    @LoadBalanced
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
