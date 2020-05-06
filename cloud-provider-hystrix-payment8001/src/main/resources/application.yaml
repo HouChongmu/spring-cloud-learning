@@ -2,14 +2,14 @@ server:
   port: 8001
 spring:
   application:
-    name: springcloud-payment-service #服务名，也就是放进注册中心的名字
+    name: cloud-provider-hystrix-payment #服务名，也就是放进注册中心的名字
   http:
     encoding:
       force: true
       charset: UTF-8
       enabled: true
   # 一定要有端口号和服务名称
-  
+
 eureka:
   client:
     register-with-eureka: true
