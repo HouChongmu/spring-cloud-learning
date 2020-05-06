@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: springcloud-payment-service #服务名，也就是放进注册中心的名字
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  # 一定要有端口号和服务名称
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否从EurekaServer获取已有的注册信息，默认为ture
+    service-url:
+     defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: payment8001 #id别名
+    prefer-ip-address: true # 显示ip信息
