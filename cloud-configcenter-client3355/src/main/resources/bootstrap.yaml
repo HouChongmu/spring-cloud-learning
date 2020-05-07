@@ -25,7 +25,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka
 
-# 暴露监控端点
+ # 暴露监控入口
 #management:
 #  endpoints:
 #    web:

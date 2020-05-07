@@ -14,7 +14,7 @@ spring:
           - springcloud-config
       ####读取分支
       label: springcloud-learning
-
+# http://localhost:3344/springcloud-learning/file-name直接获取配置文件
 #服务注册到eureka地址
 eureka:
   client:
