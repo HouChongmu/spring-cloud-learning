@@ -22,6 +22,9 @@
         <module>cloud-stream-rabbitmq-provider8801</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
         <module>cloud-stream-rabbitmq-consumer8002</module>
+        <module>alicloud-provider-payment9001</module>
+        <module>alicloud-provider-payment9002</module>
+        <module>alicloud-consumer-nacos-order83</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
