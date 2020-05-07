@@ -1,0 +1,4 @@
+server:
+  port: 3377
+    #active: test # 表示测试环境
+    #active: info

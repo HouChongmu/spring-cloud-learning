@@ -25,6 +25,7 @@
         <module>alicloud-provider-payment9001</module>
         <module>alicloud-provider-payment9002</module>
         <module>alicloud-consumer-nacos-order83</module>
+        <module>alicloud-config-nacos-client3377</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
