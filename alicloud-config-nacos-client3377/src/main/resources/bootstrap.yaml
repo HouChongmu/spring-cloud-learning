@@ -10,5 +10,6 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yaml
+        group:
 # 配置文件名(data id)：${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
 # nacos-config-client-dev.yaml
